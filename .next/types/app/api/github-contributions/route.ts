@@ -1,4 +1,4 @@
-// File: D:\mern-portfolio\app\api\github-contributions\route.ts
+// File: D:\interview-portfolio\app\api\github-contributions\route.ts
 import * as entry from '../../../../../app/api/github-contributions/route.js'
 import type { NextRequest } from 'next/server.js'
 

@@ -72,8 +72,8 @@ export const PORTFOLIO_DATA = {
       ],
       techStack: ["React", "Node.js", "Express", "MongoDB", "Redis", "BullMQ", "AWS S3", "FFmpeg", "HLS"],
       category: "Full-Stack",
-      liveUrl: "https://github.com/codewithdevu",
-      githubUrl: "https://github.com/codewithdevu",
+      liveUrl: "https://divyansh-tube.vercel.app/",
+      githubUrl: "https://github.com/codewithdevu/full-stack-project",
       image: "/divyanshtube_preview.jpg",
       featured: true,
       architectureHighlights: [
@@ -97,8 +97,8 @@ export const PORTFOLIO_DATA = {
       ],
       techStack: ["Next.js 15", "TypeScript", "NextAuth.js", "MongoDB", "Tailwind CSS", "Shadcn UI", "Zod", "Resend API"],
       category: "Next.js",
-      liveUrl: "https://github.com/codewithdevu",
-      githubUrl: "https://github.com/codewithdevu",
+      liveUrl: "https://mystery-message-chi-tan.vercel.app/",
+      githubUrl: "https://github.com/codewithdevu/Mystery-Message",
       image: "/mysterymessage_preview.jpg",
       featured: true,
       architectureHighlights: [

@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import Image from 'next/image';
 import { PORTFOLIO_DATA } from '@/data/portfolioData';
 import GithubCalendar from './GithubCalendar';
@@ -14,7 +15,7 @@ export default function HeroSection() {
         {/* Left Bio Content */}
         <div className="order-2 md:order-1 md:col-span-2 space-y-4">
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-white">
-            Divyansh, 20
+            Divyansh, 21
           </h1>
 
           <div className="text-neutral-300 font-sans text-base sm:text-lg space-y-4 leading-relaxed font-normal">
@@ -31,13 +32,15 @@ export default function HeroSection() {
             </p>
 
             <p className="pt-2">
-              <span className="text-white font-medium">Open to Work</span>: Full-Time, internship, Collabs.{' '}
-              <a
-                href="#contact"
-                className="text-white underline underline-offset-4 hover:text-neutral-300 transition-colors font-medium"
+              <span className="text-white font-medium">Open to Work</span>: Full-Time, Freelance, or Collabs.{' '}
+              <button
+                data-cal-namespace=""
+                data-cal-link="divyansh-yadav-nffvkt/15min"
+                data-cal-config='{"layout":"month_view","theme":"dark"}'
+                className="text-white underline underline-offset-4 hover:text-neutral-300 transition-colors font-medium cursor-pointer inline-block"
               >
                 Let’s talk.
-              </a>
+              </button>
             </p>
           </div>
         </div>
