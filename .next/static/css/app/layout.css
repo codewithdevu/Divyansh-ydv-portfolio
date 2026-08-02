@@ -672,8 +672,12 @@ video {
 .w-full{
   width: 100%;
 }
-.min-w-\[700px\]{
-  min-width: 700px;
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
+.min-w-full{
+  min-width: 100%;
 }
 .max-w-5xl{
   max-width: 64rem;
@@ -739,6 +743,9 @@ video {
 }
 .items-center{
   align-items: center;
+}
+.justify-start{
+  justify-content: flex-start;
 }
 .justify-center{
   justify-content: center;
@@ -1439,6 +1446,14 @@ body {
 
   .sm\:max-w-\[280px\]{
     max-width: 280px;
+  }
+
+  .sm\:items-center{
+    align-items: center;
+  }
+
+  .sm\:justify-center{
+    justify-content: center;
   }
 
   .sm\:gap-10{

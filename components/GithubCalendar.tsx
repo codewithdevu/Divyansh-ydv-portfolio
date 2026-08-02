@@ -69,10 +69,10 @@ export default function GithubCalendar() {
 
   return (
     <div className="space-y-3 pt-8 pb-2 border-t border-neutral-900/80 my-8 w-full flex flex-col items-center">
-      {/* Heatmap Grid - Smooth Horizontal Scroll on Small Mobile Screens */}
-      <div className="w-full overflow-x-auto scroller-none flex flex-col items-center justify-center min-h-[160px] pb-2">
+      {/* Heatmap Grid Container - Smooth Start-to-End Scroll (Jan to Dec) without Left Cutoff */}
+      <div className="w-full overflow-x-auto scroller-none min-h-[160px] pb-2">
         {mounted ? (
-          <div className="w-full flex flex-col items-center justify-center overflow-hidden min-w-[700px] sm:min-w-0">
+          <div className="w-max min-w-full sm:min-w-0 mx-auto flex flex-col items-start sm:items-center justify-start sm:justify-center px-1">
             <GitHubCalendar
               username="codewithdevu"
               year={2026}
