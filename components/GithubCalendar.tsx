@@ -69,10 +69,10 @@ export default function GithubCalendar() {
 
   return (
     <div className="space-y-3 pt-8 pb-2 border-t border-neutral-900/80 my-8 w-full flex flex-col items-center">
-      {/* Heatmap Grid - Perfectly Centered Symmetrically */}
-      <div className="w-full overflow-hidden flex flex-col items-center justify-center min-h-[160px]">
+      {/* Heatmap Grid - Smooth Horizontal Scroll on Small Mobile Screens */}
+      <div className="w-full overflow-x-auto scroller-none flex flex-col items-center justify-center min-h-[160px] pb-2">
         {mounted ? (
-          <div className="w-full flex flex-col items-center justify-center overflow-hidden">
+          <div className="w-full flex flex-col items-center justify-center overflow-hidden min-w-[700px] sm:min-w-0">
             <GitHubCalendar
               username="codewithdevu"
               year={2026}
@@ -133,8 +133,8 @@ export default function GithubCalendar() {
         )}
       </div>
 
-      {/* Single Clean Bottom Bar Perfectly Centered & Aligned 1:1 with ayushworks.com */}
-      <div className="w-full max-w-[895px] flex items-center justify-between text-xs font-mono text-neutral-400 pt-1">
+      {/* Single Clean Bottom Bar Perfectly Centered & Responsive */}
+      <div className="w-full max-w-[895px] flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-neutral-400 pt-1 px-1">
         <span>{totalContributions} activities in 2026</span>
         <div className="flex items-center gap-1.5 text-xs">
           <span>Less</span>

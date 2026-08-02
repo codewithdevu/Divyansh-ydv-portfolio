@@ -10,10 +10,10 @@ export default function HeroSection() {
 
   return (
     <section id="hero" className="pt-4 pb-4 max-w-5xl mx-auto px-4 sm:px-6 space-y-10">
-      {/* 2-Column Vertically Centered Hero Layout matching ayushworks.com */}
-      <div className="grid gap-8 sm:gap-10 md:grid-cols-3 items-center">
+      {/* Responsive Hero Layout: Photo fixed at 280px (never shrinks), text adapts cleanly below 950px */}
+      <div className="flex flex-col min-[950px]:flex-row items-center justify-between gap-8 min-[950px]:gap-12">
         {/* Left Bio Content */}
-        <div className="order-2 md:order-1 md:col-span-2 space-y-4">
+        <div className="order-2 min-[950px]:order-1 flex-1 space-y-4">
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-white">
             Divyansh, 21
           </h1>
@@ -45,9 +45,9 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right Real User Photo - Centered Vertically & Horizontally */}
-        <div className="order-1 md:order-2 md:col-span-1 flex items-center justify-center w-full">
-          <div className="relative aspect-square w-full max-w-[280px] rounded-xl overflow-hidden border border-neutral-800 shadow-2xl bg-neutral-900 mx-auto">
+        {/* Right Real User Photo - Fixed 280px width & height (shrink-0 prevents image from shrinking below 950px) */}
+        <div className="order-1 min-[950px]:order-2 shrink-0 flex items-center justify-center">
+          <div className="relative aspect-square w-[280px] h-[280px] shrink-0 rounded-xl overflow-hidden border border-neutral-800 shadow-2xl bg-neutral-900">
             <Image
               src="/divyansh_photo.jpg"
               alt="Divyansh Yadav"

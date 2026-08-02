@@ -15,7 +15,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-[#09090b]/95 backdrop-blur-md pt-8 pb-4">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-end">
         {/* Right-aligned Navbar matching ayushworks.com screenshot */}
-        <nav className="flex items-center gap-7 font-sans text-base font-semibold tracking-tight">
+        <nav className="flex items-center gap-4 sm:gap-7 font-sans text-sm sm:text-base font-semibold tracking-tight">
           {navLinks.map((link) => (
             <a
               key={link.name}
