@@ -3,10 +3,10 @@
 import { useState } from 'react';
 
 export default function Header() {
-  const [activeTab, setActiveTab] = useState('$whoami');
+  const [activeTab, setActiveTab] = useState('$devu');
 
   const navLinks = [
-    { name: '$whoami', href: '#hero' },
+    { name: '$devu', href: '#hero' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
   ];

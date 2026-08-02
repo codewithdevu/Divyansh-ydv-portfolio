@@ -19,7 +19,7 @@ export default function HeroSection() {
         {/* Left Bio Content - Appears below photo on tablet/mobile (<= 920px), left side on desktop */}
         <div className="order-2 min-[920px]:order-1 min-[920px]:col-span-2 space-y-4">
           <h1 className="font-serif text-3xl sm:text-4xl min-[920px]:text-5xl font-normal text-white">
-            Divyansh, 20
+            Divyansh, 21
           </h1>
 
           <div className="text-neutral-300 font-sans text-base sm:text-lg space-y-4 leading-relaxed font-normal">
@@ -35,15 +35,18 @@ export default function HeroSection() {
               Pursuing <span className="text-white">B.Sc. in Mathematics</span> at Samrat Prithviraj Chauhan Govt. College, Ajmer. Combining analytical mathematical logic with modern software engineering.
             </p>
 
-            <p className="pt-2">
-              <span className="text-white font-medium">Open to Work</span>: Full-Time, Freelance, or Collabs.{' '}
+            {/* Responsive Open to Work + Let's Talk CTA */}
+            <p className="pt-2 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-base sm:text-lg">
+              <span>
+                <span className="text-white font-medium">Open to Work</span>: Full-Time, Freelance, or Collabs.
+              </span>
               <button
                 data-cal-namespace=""
                 data-cal-link="divyansh-yadav-nffvkt/15min"
                 data-cal-config='{"layout":"month_view","theme":"dark"}'
-                className="text-white underline underline-offset-4 hover:text-neutral-300 transition-colors font-medium cursor-pointer inline-block"
+                className="text-white underline underline-offset-4 hover:text-neutral-300 active:scale-95 transition-all font-medium cursor-pointer shrink-0 inline-flex items-center"
               >
-                Let’s talk.
+                <span>Let’s talk.</span>
               </button>
             </p>
           </div>
