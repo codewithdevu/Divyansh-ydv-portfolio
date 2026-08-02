@@ -1,15 +1,18 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import { PORTFOLIO_DATA } from '@/data/portfolioData';
-import GithubCalendar from './GithubCalendar';
+import React from "react";
+import Image from "next/image";
+import { PORTFOLIO_DATA } from "@/data/portfolioData";
+import GithubCalendar from "./GithubCalendar";
 
 export default function HeroSection() {
   const { personal } = PORTFOLIO_DATA;
 
   return (
-    <section id="hero" className="pt-4 pb-4 max-w-5xl mx-auto px-4 sm:px-6 space-y-10">
+    <section
+      id="hero"
+      className="pt-4 pb-4 max-w-5xl mx-auto px-4 sm:px-6 space-y-10"
+    >
       {/* 
         Professional Responsive Layout:
         - Desktop (> 920px): Text left, Photo right (2-column side-by-side)
@@ -19,26 +22,37 @@ export default function HeroSection() {
         {/* Left Bio Content - Appears below photo on tablet/mobile (<= 920px), left side on desktop */}
         <div className="order-2 min-[920px]:order-1 min-[920px]:col-span-2 space-y-4">
           <h1 className="font-serif text-3xl sm:text-4xl min-[920px]:text-5xl font-normal text-white">
-            Divyansh, 21
+            Divyansh
           </h1>
 
           <div className="text-neutral-300 font-sans text-base sm:text-lg space-y-4 leading-relaxed font-normal">
             <p>
-              Product-focused <span className="text-white font-medium">MERN Stack Software Engineer</span> who ships fast. I turn complex ideas into polished, high-performance web applications and obsess over details that make software feel right.
+              Product-focused{" "}
+              <span className="text-white font-medium">
+                MERN Stack Software Engineer
+              </span>{" "}
+              who ships fast. I turn complex ideas into polished,
+              high-performance web applications and obsess over details that
+              make software feel right.
             </p>
 
             <p>
-              I’ve worked on full-stack web apps, async processing queues (<span className="text-white">BullMQ & Redis</span>), video transcoding pipelines (<span className="text-white">FFmpeg & HLS</span>), and type-safe serverless backend systems. Mostly with <span className="text-white">TypeScript, React, Node.js, Express, MongoDB</span>, and <span className="text-white">Next.js 15</span>.
+              Experienced in building async processing queues (BullMQ & Redis),
+              video transcoding pipelines (FFmpeg & HLS), and type-safe backend
+              architectures using TypeScript, Next.js, Node.js, and MongoDB.
             </p>
 
             <p>
-              Pursuing <span className="text-white">B.Sc. in Mathematics</span> at Samrat Prithviraj Chauhan Govt. College, Ajmer. Combining analytical mathematical logic with modern software engineering.
+              Pursuing <span className="text-white">B.Sc. in Mathematics</span>{" "}
+              at Samrat Prithviraj Chauhan Govt. College, Ajmer. Combining
+              analytical mathematical logic with modern software engineering.
             </p>
 
             {/* Responsive Open to Work + Let's Talk CTA */}
             <p className="pt-2 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-base sm:text-lg">
               <span>
-                <span className="text-white font-medium">Open to Work</span>: Full-Time, Freelance, or Collabs.
+                <span className="text-white font-medium">Open to Work</span>:
+                Full-Time, Freelance, or Collabs.
               </span>
               <button
                 data-cal-namespace=""
