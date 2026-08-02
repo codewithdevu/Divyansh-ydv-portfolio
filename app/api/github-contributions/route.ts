@@ -7,7 +7,6 @@ export async function GET(request: NextRequest) {
   try {
     const timestamp = Date.now();
 
-    // Direct fetch with cache-busting timestamp parameter to GitHub profile HTML
     const res = await fetch(
       `https://github.com/users/codewithdevu/contributions?tab=overview&from=2026-01-01&to=2026-12-31&_t=${timestamp}`,
       {
@@ -31,7 +30,6 @@ export async function GET(request: NextRequest) {
 
     const html = await res.text();
 
-    // 1. Extract EXACT total contributions count for 2026
     let total2026 = 490;
     const totalMatch = html.match(/([\d,]+)\s+contributions\s+in\s+2026/i);
     if (totalMatch) {
@@ -43,7 +41,6 @@ export async function GET(request: NextRequest) {
       }
     }
 
-    // 2. Attribute-order-agnostic parsing for every ContributionCalendar-day cell
     const contributions: Array<{ date: string; count: number; level: number }> = [];
     const tdRegex = /<td\s+[^>]*class="[^"]*ContributionCalendar-day[^"]*"[^>]*>/gi;
 
@@ -61,7 +58,6 @@ export async function GET(request: NextRequest) {
 
         let count = 0;
         try {
-          // Escape special regex characters in cellId
           const escapedCellId = cellId.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
           const ttRegex = new RegExp(`<tool-tip[^>]*for="${escapedCellId}"[^>]*>([^<]+)</tool-tip>`, "i");
           const ttMatch = html.match(ttRegex);

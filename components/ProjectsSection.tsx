@@ -16,22 +16,43 @@ export default function ProjectsSection() {
         </h2>
       </div>
 
-      {/* 2-Column Grid Layout matching ayushworks.com screenshot */}
+      {/* 2-Column Grid Layout matching user screenshot 1:1 */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 items-start">
         {projects.map((project) => (
           <div
             key={project.id}
             className="group flex flex-col justify-between space-y-4"
           >
-            {/* Top Project Screenshot */}
-            <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden border border-neutral-800/90 bg-neutral-950 shadow-lg group-hover:border-neutral-700 transition-colors">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover object-top group-hover:scale-103 transition-transform duration-500"
-                sizes="(max-width: 768px) 100vw, 500px"
-              />
+            {/* macOS Browser Window Frame Container matching screenshot 1:1 */}
+            <div className="relative w-full rounded-2xl overflow-hidden border border-neutral-800/90 bg-[#09090b] shadow-2xl group-hover:border-neutral-700 transition-colors flex flex-col">
+              {/* Top Browser Header Bar */}
+              <div className="flex items-center justify-between px-4 py-2.5 bg-[#121215] border-b border-neutral-800/80">
+                {/* Red, Yellow, Green Window Dots */}
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
+                  <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
+                  <div className="w-3 h-3 rounded-full bg-[#27c93f]" />
+                </div>
+
+                {/* URL Pill Badge on Right */}
+                {project.liveUrl && (
+                  <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-[11px] font-mono text-cyan-400 font-medium truncate max-w-[240px]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+                    <span className="truncate">{project.liveUrl}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Image Preview Container */}
+              <div className="relative aspect-[16/10] w-full bg-[#09090b] p-1.5">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-contain object-top group-hover:scale-102 transition-transform duration-500 p-1"
+                  sizes="(max-width: 768px) 100vw, 500px"
+                />
+              </div>
             </div>
 
             {/* Title & Subtitle */}
