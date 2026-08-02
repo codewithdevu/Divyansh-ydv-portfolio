@@ -52,7 +52,7 @@ export default function HeroSection() {
             <p className="pt-2 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-base sm:text-lg">
               <span>
                 <span className="text-white font-medium">Open to Work</span>:
-                Full-Time, Freelance, or Collabs.
+                intership, full-time, or Collabs.
               </span>
               <button
                 data-cal-namespace=""
