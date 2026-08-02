@@ -16,7 +16,7 @@ export default function ProjectsSection() {
         </h2>
       </div>
 
-      {/* 2-Column Grid Layout matching user screenshot 1:1 */}
+      {/* 2-Column Grid Layout matching ayushworks.com screenshot 1:1 */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 items-start">
         {projects.map((project) => (
           <div

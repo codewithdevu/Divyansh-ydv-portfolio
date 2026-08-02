@@ -13,8 +13,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-[#09090b]/95 backdrop-blur-md pt-8 pb-4">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-end">
-        {/* Right-aligned Navbar matching ayushworks.com screenshot */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-center min-[915px]:justify-end">
+        {/* Navbar: Centered on tablet/mobile (<= 915px), Right-aligned on Desktop (> 915px) */}
         <nav className="flex items-center gap-4 sm:gap-7 font-sans text-sm sm:text-base font-semibold tracking-tight">
           {navLinks.map((link) => (
             <a

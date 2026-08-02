@@ -10,12 +10,16 @@ export default function HeroSection() {
 
   return (
     <section id="hero" className="pt-4 pb-4 max-w-5xl mx-auto px-4 sm:px-6 space-y-10">
-      {/* Responsive Hero Layout: Photo fixed at 280px (never shrinks), text adapts cleanly below 950px */}
-      <div className="flex flex-col min-[950px]:flex-row items-center justify-between gap-8 min-[950px]:gap-12">
-        {/* Left Bio Content */}
-        <div className="order-2 min-[950px]:order-1 flex-1 space-y-4">
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-white">
-            Divyansh, 21
+      {/* 
+        Professional Responsive Layout:
+        - Desktop (> 920px): Text left, Photo right (2-column side-by-side)
+        - Tablet & Mobile (<= 920px): Photo TOP centered, Text BOTTOM full-width (prevents squished text)
+      */}
+      <div className="grid grid-cols-1 min-[920px]:grid-cols-3 gap-8 min-[920px]:gap-10 items-center">
+        {/* Left Bio Content - Appears below photo on tablet/mobile (<= 920px), left side on desktop */}
+        <div className="order-2 min-[920px]:order-1 min-[920px]:col-span-2 space-y-4">
+          <h1 className="font-serif text-3xl sm:text-4xl min-[920px]:text-5xl font-normal text-white">
+            Divyansh, 20
           </h1>
 
           <div className="text-neutral-300 font-sans text-base sm:text-lg space-y-4 leading-relaxed font-normal">
@@ -45,9 +49,9 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right Real User Photo - Fixed 280px width & height (shrink-0 prevents image from shrinking below 950px) */}
-        <div className="order-1 min-[950px]:order-2 shrink-0 flex items-center justify-center">
-          <div className="relative aspect-square w-[280px] h-[280px] shrink-0 rounded-xl overflow-hidden border border-neutral-800 shadow-2xl bg-neutral-900">
+        {/* Right Real User Photo - Appears TOP centered on tablet/mobile (<= 920px), right side on desktop */}
+        <div className="order-1 min-[920px]:order-2 min-[920px]:col-span-1 flex items-center justify-center w-full">
+          <div className="relative aspect-square w-full max-w-[240px] sm:max-w-[280px] rounded-xl overflow-hidden border border-neutral-800 shadow-2xl bg-neutral-900 mx-auto">
             <Image
               src="/divyansh_photo.jpg"
               alt="Divyansh Yadav"
