@@ -1,5 +1,5 @@
 {
   "/_not-found/page": "/_not-found",
-  "/api/github-contributions/route": "/api/github-contributions",
-  "/page": "/"
+  "/page": "/",
+  "/api/github-contributions/route": "/api/github-contributions"
 }

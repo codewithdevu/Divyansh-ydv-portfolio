@@ -35,21 +35,18 @@ export default function HeroSection() {
               Pursuing <span className="text-white">B.Sc. in Mathematics</span> at Samrat Prithviraj Chauhan Govt. College, Ajmer. Combining analytical mathematical logic with modern software engineering.
             </p>
 
-            {/* Responsive Open to Work + Padded Touch-Friendly Let's Talk CTA */}
-            <div className="pt-2 flex flex-wrap items-center gap-x-2.5 gap-y-2 text-base sm:text-lg">
-              <span className="leading-relaxed">
-                <span className="text-white font-medium">Open to Work</span>: internship, full-time, or Collabs.
-              </span>
+            {/* Clean Inline Open to Work + Let's Talk CTA */}
+            <p className="pt-2">
+              <span className="text-white font-medium">Open to Work</span>: internship, full-time, or Collabs.{' '}
               <button
                 data-cal-namespace=""
                 data-cal-link="divyansh-yadav-nffvkt/15min"
                 data-cal-config='{"layout":"month_view","theme":"dark"}'
-                className="px-3.5 py-1.5 bg-neutral-900/90 hover:bg-neutral-800 border border-neutral-800 hover:border-neutral-700 rounded-full text-white font-medium shadow-md transition-all active:scale-95 shrink-0 inline-flex items-center gap-2 cursor-pointer text-sm sm:text-base group"
+                className="text-white underline underline-offset-4 hover:text-neutral-300 transition-colors font-medium cursor-pointer inline"
               >
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-                <span className="underline underline-offset-4 group-hover:text-neutral-200">Let’s talk.</span>
+                Let’s talk.
               </button>
-            </div>
+            </p>
           </div>
         </div>
 

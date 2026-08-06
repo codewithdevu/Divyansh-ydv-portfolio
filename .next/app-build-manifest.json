@@ -19,15 +19,8 @@
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-3d881dfa8c72bc56.js",
       "static/chunks/main-app-5c2a81b919d52006.js",
-      "static/css/15a5cdee28e7fd27.css",
+      "static/css/6f240aca4981dd17.css",
       "static/chunks/app/layout-d16685b4e7d1391c.js"
-    ],
-    "/api/github-contributions/route": [
-      "static/chunks/webpack-d0b6eea6d9f00330.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-3d881dfa8c72bc56.js",
-      "static/chunks/main-app-5c2a81b919d52006.js",
-      "static/chunks/app/api/github-contributions/route-807a0bb5d93941de.js"
     ],
     "/page": [
       "static/chunks/webpack-d0b6eea6d9f00330.js",
@@ -35,7 +28,14 @@
       "static/chunks/255-3d881dfa8c72bc56.js",
       "static/chunks/main-app-5c2a81b919d52006.js",
       "static/chunks/75-42d542df0e829481.js",
-      "static/chunks/app/page-a989deaaa9453f3e.js"
+      "static/chunks/app/page-b5c5c8bebe73df8e.js"
+    ],
+    "/api/github-contributions/route": [
+      "static/chunks/webpack-d0b6eea6d9f00330.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-3d881dfa8c72bc56.js",
+      "static/chunks/main-app-5c2a81b919d52006.js",
+      "static/chunks/app/api/github-contributions/route-807a0bb5d93941de.js"
     ]
   }
 }
