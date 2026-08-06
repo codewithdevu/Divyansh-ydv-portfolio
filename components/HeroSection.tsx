@@ -1,18 +1,15 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import { PORTFOLIO_DATA } from "@/data/portfolioData";
-import GithubCalendar from "./GithubCalendar";
+import React from 'react';
+import Image from 'next/image';
+import { PORTFOLIO_DATA } from '@/data/portfolioData';
+import GithubCalendar from './GithubCalendar';
 
 export default function HeroSection() {
   const { personal } = PORTFOLIO_DATA;
 
   return (
-    <section
-      id="hero"
-      className="pt-4 pb-4 max-w-5xl mx-auto px-4 sm:px-6 space-y-10"
-    >
+    <section id="hero" className="pt-4 pb-4 max-w-5xl mx-auto px-4 sm:px-6 space-y-10">
       {/* 
         Professional Responsive Layout:
         - Desktop (> 920px): Text left, Photo right (2-column side-by-side)
@@ -22,47 +19,37 @@ export default function HeroSection() {
         {/* Left Bio Content - Appears below photo on tablet/mobile (<= 920px), left side on desktop */}
         <div className="order-2 min-[920px]:order-1 min-[920px]:col-span-2 space-y-4">
           <h1 className="font-serif text-3xl sm:text-4xl min-[920px]:text-5xl font-normal text-white">
-            Divyansh
+            Divyansh, 21
           </h1>
 
           <div className="text-neutral-300 font-sans text-base sm:text-lg space-y-4 leading-relaxed font-normal">
             <p>
-              Product-focused{" "}
-              <span className="text-white font-medium">
-                MERN Stack Software Engineer
-              </span>{" "}
-              who ships fast. I turn complex ideas into polished,
-              high-performance web applications and obsess over details that
-              make software feel right.
+              Product-focused <span className="text-white font-medium">MERN Stack Software Engineer</span> who ships fast. I turn complex ideas into polished, high-performance web applications and obsess over details that make software feel right.
             </p>
 
             <p>
-              Experienced in building async processing queues (BullMQ & Redis),
-              video transcoding pipelines (FFmpeg & HLS), and type-safe backend
-              architectures using TypeScript, Next.js, Node.js, and MongoDB.
+              Experienced in building async processing queues (<span className="text-white">BullMQ & Redis</span>), video transcoding pipelines (<span className="text-white">FFmpeg & HLS</span>), and type-safe backend architectures using <span className="text-white">TypeScript, Next.js, Node.js</span>, and <span className="text-white">MongoDB</span>.
             </p>
 
             <p>
-              Pursuing <span className="text-white">B.Sc. in Mathematics</span>{" "}
-              at Samrat Prithviraj Chauhan Govt. College, Ajmer. Combining
-              analytical mathematical logic with modern software engineering.
+              Pursuing <span className="text-white">B.Sc. in Mathematics</span> at Samrat Prithviraj Chauhan Govt. College, Ajmer. Combining analytical mathematical logic with modern software engineering.
             </p>
 
-            {/* Responsive Open to Work + Let's Talk CTA */}
-            <p className="pt-2 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-base sm:text-lg">
-              <span>
-                <span className="text-white font-medium">Open to Work</span>:
-                intership, full-time, or Collabs.
+            {/* Responsive Open to Work + Padded Touch-Friendly Let's Talk CTA */}
+            <div className="pt-2 flex flex-wrap items-center gap-x-2.5 gap-y-2 text-base sm:text-lg">
+              <span className="leading-relaxed">
+                <span className="text-white font-medium">Open to Work</span>: internship, full-time, or Collabs.
               </span>
               <button
                 data-cal-namespace=""
                 data-cal-link="divyansh-yadav-nffvkt/15min"
                 data-cal-config='{"layout":"month_view","theme":"dark"}'
-                className="text-white underline underline-offset-4 hover:text-neutral-300 active:scale-95 transition-all font-medium cursor-pointer shrink-0 inline-flex items-center"
+                className="px-3.5 py-1.5 bg-neutral-900/90 hover:bg-neutral-800 border border-neutral-800 hover:border-neutral-700 rounded-full text-white font-medium shadow-md transition-all active:scale-95 shrink-0 inline-flex items-center gap-2 cursor-pointer text-sm sm:text-base group"
               >
-                <span>Let’s talk.</span>
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                <span className="underline underline-offset-4 group-hover:text-neutral-200">Let’s talk.</span>
               </button>
-            </p>
+            </div>
           </div>
         </div>
 

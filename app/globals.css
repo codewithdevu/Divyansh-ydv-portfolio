@@ -84,3 +84,23 @@ body {
 .animate-marquee-right:hover {
   animation-play-state: paused;
 }
+
+/* Cal.com Responsive Mobile Overlay & Modal Box Padding Fixes */
+@media (max-width: 640px) {
+  [data-cal-modal],
+  .cal-embed-modal,
+  cal-modal-box,
+  div[class*="cal-modal"],
+  iframe[data-cal-has-loaded="true"] {
+    padding: 16px 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Rounded inner dialog & comfortable mobile max-height */
+  .cal-modal-body,
+  .cal-embed {
+    max-height: 88vh !important;
+    border-radius: 16px !important;
+    overflow-y: auto !important;
+  }
+}
