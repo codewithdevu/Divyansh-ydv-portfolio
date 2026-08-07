@@ -19,7 +19,7 @@ export default function HeroSection() {
         {/* Left Bio Content - Appears below photo on tablet/mobile (<= 920px), left side on desktop */}
         <div className="order-2 min-[920px]:order-1 min-[920px]:col-span-2 space-y-4">
           <h1 className="font-serif text-3xl sm:text-4xl min-[920px]:text-5xl font-normal text-white">
-            Divyansh, 21
+            Divyansh
           </h1>
 
           <div className="text-neutral-300 font-sans text-base sm:text-lg space-y-4 leading-relaxed font-normal">
@@ -28,7 +28,7 @@ export default function HeroSection() {
             </p>
 
             <p>
-              Experienced in building async processing queues (<span className="text-white">BullMQ & Redis</span>), video transcoding pipelines (<span className="text-white">FFmpeg & HLS</span>), and type-safe backend architectures using <span className="text-white">TypeScript, Next.js, Node.js</span>, and <span className="text-white">MongoDB</span>.
+              Experienced in building async processing queues (BullMQ & Redis), video transcoding pipelines (FFmpeg & HLS), and type-safe backend architectures using TypeScript, Next.js, Node.js, and MongoDB.
             </p>
 
             <p>
