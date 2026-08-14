@@ -85,7 +85,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-12 max-w-5xl mx-auto px-4 sm:px-6 border-t border-neutral-900"
+      className="py-10 max-w-5xl mx-auto px-4 sm:px-6"
     >
       {/* Containerized Card Box matching manixh.dev 1:1 */}
       <div className="border border-dashed border-neutral-800/90 rounded-2xl p-5 sm:p-8 bg-[#09090b] shadow-xl space-y-8">

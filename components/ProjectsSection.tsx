@@ -144,7 +144,7 @@ export default function ProjectsSection() {
   });
 
   return (
-    <section id="projects" className="py-12 max-w-5xl mx-auto px-4 sm:px-6 border-t border-neutral-900">
+    <section id="projects" className="py-10 max-w-5xl mx-auto px-4 sm:px-6">
       <div className="mb-8">
         <h2 className="font-serif text-3xl sm:text-4xl text-white font-normal">
           Featured Projects

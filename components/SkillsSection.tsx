@@ -87,7 +87,7 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="py-10 max-w-5xl mx-auto px-4 sm:px-6 border-t border-neutral-900 overflow-hidden">
+    <section id="skills" className="py-10 max-w-5xl mx-auto px-4 sm:px-6 overflow-hidden">
       <h2 className="font-serif text-3xl sm:text-4xl text-white mb-6 font-normal">
         Technology & Tools
       </h2>
