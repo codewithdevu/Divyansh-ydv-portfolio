@@ -68,7 +68,7 @@ export default function GithubCalendar() {
   };
 
   return (
-    <div className="space-y-3 pt-8 pb-2 border-t border-neutral-900/80 my-8 w-full flex flex-col items-center">
+    <div className="border border-dashed border-neutral-800/90 rounded-2xl p-4 sm:p-6 bg-[#09090b] shadow-xl w-full my-8 space-y-3 flex flex-col items-center">
       {/* Heatmap Grid Container - Smooth Start-to-End Scroll (Jan to Dec) without Left Cutoff */}
       <div className="w-full overflow-x-auto scroller-none min-h-[160px] pb-2">
         {mounted ? (
