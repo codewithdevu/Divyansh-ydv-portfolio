@@ -1,14 +1,21 @@
 {
-  "node_modules\\next\\dist\\client\\dev\\hot-reloader\\app\\use-websocket.js -> @vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts": {
-    "id": "node_modules\\next\\dist\\client\\dev\\hot-reloader\\app\\use-websocket.js -> @vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts",
+  "node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": 5139,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js"
+      "static/chunks/139.7a5a8e93a21948c1.js"
+    ]
+  },
+  "node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": 1646,
+    "files": [
+      "static/chunks/646.f342b7cffc01feb0.js"
     ]
   },
   "node_modules\\react-activity-calendar\\build\\chunks\\index-B3Gga1-_.js -> ./Tooltip-D5idU7TC.js": {
-    "id": "node_modules\\react-activity-calendar\\build\\chunks\\index-B3Gga1-_.js -> ./Tooltip-D5idU7TC.js",
+    "id": 5024,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_react-activity-calendar_build_chunks_Tooltip-D5idU7TC_js.js"
+      "static/chunks/c16f53c3.7d9581725e42144c.js",
+      "static/chunks/887.ce2b4e678c811ecc.js"
     ]
   }
 }
