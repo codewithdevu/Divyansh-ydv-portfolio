@@ -75,7 +75,6 @@ export default function ContactSection() {
         );
       }
     } catch (err) {
-      // Smooth fallback response
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
       setTimeout(() => setStatus("idle"), 5000);
@@ -87,7 +86,6 @@ export default function ContactSection() {
       id="contact"
       className="py-10 max-w-5xl mx-auto px-4 sm:px-6"
     >
-      {/* Containerized Card Box matching manixh.dev 1:1 */}
       <div className="border border-dashed border-neutral-800/90 rounded-2xl p-5 sm:p-8 bg-[#09090b] shadow-xl space-y-8">
         <div className="mb-2">
           <h2 className="font-serif text-3xl sm:text-4xl text-white font-normal mb-2">
